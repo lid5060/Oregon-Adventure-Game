@@ -1,43 +1,26 @@
-import random
-
 # add in the ability to add to these within the different worlds when water is drank etc
 
-first_health = random.randint(10, 100)
-first_water = random.randint(10, 100)
-first_food = random.randint(10, 100)
+# change to use a single health which gets changed per level
 
-second_health = first_health - random.randint(1,10)
-second_water = first_water - random.randint(1, 10)
-second_food = first_food - random.randint(1,10)
+stats = {'health': 100, 'water': 100, 'food': 100, 'level': 1, 'xp': 0, 'gold': 0, 'inventory': []}
 
-third_health = second_health - random.randint(1,10)
-third_water = second_water  - random.randint(1,10)
-third_food = second_food - random.randint(1,10)
 
-fourth_health = third_health - random.randint(1,10)
-fourth_water = third_water - random.randint(1,10)
-fourth_food = third_food - random.randint(1,10)
+# add these to the world files
 
-fifth_health = fourth_health - random.randint(1,10)
-fifth_water = fourth_water - random.randint(1,10)
-fifth_food = fourth_food - random.randint(1,10)
+# Add items
+# stats['inventory'].append('sword')
+# stats['inventory'].append('health potion')
 
-sixth_health = fifth_health - random.randint(1,10)
-sixth_water = fifth_water - random.randint(1,10)
-sixth_food = fifth_food - random.randint(1,10)
+# Check if player has an item
+# if 'key' in stats['inventory']:
+    # print("You can unlock the door!")
 
-seventh_health = sixth_health - random.randint(1,10)
-seventh_water = sixth_water - random.randint(1,10)
-seventh_food = sixth_food - random.randint(1,10)
+# Remove items (e.g., when used)
+# stats['inventory'].remove('health potion')
 
-eighth_health = seventh_health - random.randint(1,10)
-eighth_water = seventh_water - random.randint(1,10)
-eighth_food = seventh_food - random.randint(1,10)
+# Count items
+# if stats['inventory'].count('gold coin') >= 10:
+    # print("You have enough for a trade!")
 
-ninth_health = eighth_health - random.randint(1,10)
-ninth_water = eighth_water - random.randint(1,10)
-ninth_food = eighth_food - random.randint(1,10)
-
-tenth_health = ninth_health - random.randint(1,10)
-tenth_water = ninth_water - random.randint(1,10)
-tenth_food = ninth_food - random.randint(1,10)
+# Display inventory
+# print("Your items:", stats['inventory'])
